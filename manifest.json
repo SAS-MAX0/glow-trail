@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Glow Trail Extension",
+  "version": "1.0",
+  "description": "A Chrome extension that adds customizable mouse animations.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

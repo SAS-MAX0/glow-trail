@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Trail</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Glow Trail</h2>
+
+  <div class="form-group">
+    <label for="circleCount">Number of circles:</label>
+    <input type="number" id="circleCount" value="20" min="5" max="50">
+  </div>
+
+  <div class="form-group">
+    <label for="colorScheme">Choose a color scheme:</label>
+    <select id="colorScheme">
+      <option value="warm">Warm</option>
+      <option value="cool">Cool</option>
+      <option value="neon">Neon</option>
+      <option value="pastel">Pastel</option>
+      <option value="rainbow">Rainbow</option>
+      <option value="custom">Custom</option>
+    </select>
+  </div>
+
+  <div id="customColors" style="display:none;">
+    <label>Pick your circle color:</label>
+    <input type="color" id="circleColor" value="#ffb56b">
+    <label>Pick your background color:</label>
+    <input type="color" id="bgColor" value="#f7f7f7">
+  </div>
+
+  <div class="form-group">
+    <label for="trailPattern">Choose a trail pattern:</label>
+    <select id="trailPattern">
+      <option value="circle">Circle</option>
+      <option value="dotted">Dotted</option>
+      <option value="spiral">Spiral</option>
+    </select>
+  </div>
+
+
+  <button id="saveSettings">Save</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
